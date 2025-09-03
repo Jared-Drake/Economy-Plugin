@@ -1,0 +1,66 @@
+name: EconomyPlugin
+version: 1.0.0
+main: com.economyplugin.EconomyPlugin
+api-version: 1.20
+depend: [Vault]
+softdepend: [Essentials, QuickShop]
+description: A custom economy plugin with jobs, achievement rewards, and playtime rewards
+
+commands:
+  job:
+    description: Manage jobs and view job information
+    usage: /job [info|list|join|quit]
+    permission: economyplugin.job
+  jobs:
+    description: View available jobs
+    usage: /jobs
+    permission: economyplugin.jobs
+  jobinfo:
+    description: View detailed job information
+    usage: /jobinfo [jobname]
+    permission: economyplugin.jobinfo
+  playtime:
+    description: Check your playtime and rewards
+    usage: /playtime
+    permission: economyplugin.playtime
+  achievement:
+    description: View achievement rewards
+    usage: /achievement
+    permission: economyplugin.achievement
+  adminpay:
+    description: Admin command to pay any amount to players
+    usage: /adminpay <player> <amount>
+    permission: economyplugin.admin.pay
+  auction:
+    description: Auction house commands
+    usage: /auction [create|list|my|help]
+    permission: economyplugin.auction
+
+permissions:
+  economyplugin.job:
+    description: Allows players to manage their jobs
+    default: true
+  economyplugin.jobs:
+    description: Allows players to view available jobs
+    default: true
+  economyplugin.jobinfo:
+    description: Allows players to view job information
+    default: true
+  economyplugin.playtime:
+    description: Allows players to check their playtime
+    default: true
+  economyplugin.achievement:
+    description: Allows players to view achievement rewards
+    default: true
+  economyplugin.admin:
+    description: Admin commands for the economy plugin
+    default: op
+  economyplugin.admin.pay:
+    description: Allows operators to pay any amount to players
+    default: op
+  economyplugin.auction:
+    description: Allows players to use auction house features
+    default: true
+
+
+

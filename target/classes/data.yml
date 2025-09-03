@@ -1,0 +1,25 @@
+# Economy Plugin Data File
+# This file stores player data and should not be edited manually
+
+# Player Jobs
+player-jobs: {}
+
+# Job Cooldowns
+job-cooldowns: {}
+
+# Player Achievement Completion Status
+player-achievements: {}
+
+# Playtime Data
+playtime: {}
+
+# Last Reward Times
+last-reward-times: {}
+
+# Playtime Tiers
+playtime-tiers: {}
+
+
+
+
+
